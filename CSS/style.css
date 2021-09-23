@@ -155,7 +155,11 @@ body {
 /*Особенности*/
 .peculiarities {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
+}
+
+.peculiarities-list {
+  display: flex;
 }
 
 .peculiarities-item {
@@ -163,6 +167,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: var(--secondary-title-color);
+  margin-left: 30px;
 }
 
 .peculiarities-title {
@@ -181,7 +186,14 @@ body {
 }
 
 /*ABOUT US WEBSTUDIO*/
+.about-us {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
 
+.about-us-list {
+  display: flex;
+}
 .about-us-title {
   font-weight: bold;
   font-size: 36px;
@@ -189,9 +201,17 @@ body {
   text-align: center;
   color: var(--secondary-title-color);
 }
+/*Team*/
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .team-title {
   font-weight: bold;
@@ -200,7 +220,12 @@ body {
   text-align: center;
   color: var(--secondary-title-color);
 }
+
+.team-item {
+  margin-left: 30px;
+}
 .team-personal-name {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -208,6 +233,7 @@ body {
   color: var(--secondary-text-color);
 }
 .team-position {
+  margin-top: 10px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
