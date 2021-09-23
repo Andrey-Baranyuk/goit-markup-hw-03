@@ -22,6 +22,7 @@ ul {
 
 img {
   display: block;
+  min-width: 100%;
 }
 
 body {
@@ -348,12 +349,16 @@ body {
 }
 
 /*GALLARY-WORK*/
+.content-section {
+  padding-top: 94px;
+}
 
 .gallary-work-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
+  text-align: left;
 }
 
 .gallary-work-text {
@@ -361,4 +366,40 @@ body {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
+  text-align: left;
+  margin-top: 4px;
+}
+.gallery-button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin-bottom: 34px;
+  margin-left: 8px;
+}
+.gallary-card-bottom {
+  padding: 20px 24px;
+  border: 1px solid;
+  border-top: none;
+}
+.gallary-work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.gallary-work-list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.gallery-filters-btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
 }
