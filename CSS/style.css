@@ -57,7 +57,10 @@ body {
   color: #2196f3;
   text-decoration: none;
   margin-right: 93px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
+
 .header-logo-studio {
   color: #000000;
 }
@@ -137,9 +140,6 @@ body {
   color: var(--primary-title-color);
 }
 
-.hero-conteiner {
-}
-
 .main-button {
   padding: 10px 32px;
   cursor: pointer;
@@ -158,8 +158,20 @@ body {
   padding-bottom: 47px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .peculiarities-list {
   display: flex;
+  flex-basis: calc(100% / 4 - 90px);
 }
 
 .peculiarities-item {
@@ -176,6 +188,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  margin-bottom: 10px;
 }
 
 .peculiarities-text {
@@ -193,6 +206,14 @@ body {
 
 .about-us-list {
   display: flex;
+  flex-basis: calc(100% / 3 - 90px);
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+.about-us-item {
+  margin-left: 30px;
+  margin-top: 50px;
 }
 .about-us-title {
   font-weight: bold;
@@ -200,7 +221,9 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-title-color);
+  margin-bottom: 50px;
 }
+
 /*Team*/
 
 .team {
@@ -212,20 +235,34 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
 }
+
 .team-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-title-color);
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .team-item {
+  flex-basis: calc(100% / 4 - 90px);
   margin-left: 30px;
+  margin-top: 50px;
 }
-.team-personal-name {
+
+.team-personal-bottom {
   margin-top: 30px;
+  margin-bottom: 94px;
+  border: 1px solid;
+  border-top: none;
+}
+
+.team-personal-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -233,6 +270,7 @@ body {
   color: var(--secondary-text-color);
 }
 .team-position {
+  padding: auto;
   margin-top: 10px;
   font-weight: normal;
   font-size: 16px;
@@ -257,7 +295,14 @@ body {
 
 .footer {
   background-color: #2f303a;
+  height: 252px;
+  padding-top: 47px;
 }
+.footer-list {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
 .footer-tel-link {
   font-style: normal;
   font-weight: normal;
@@ -269,6 +314,15 @@ body {
 .footer-tel-link:hover,
 .footer-tel-link:focus {
   color: var(--accent-color);
+}
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+  text-decoration: none;
 }
 
 .foter-studio {
