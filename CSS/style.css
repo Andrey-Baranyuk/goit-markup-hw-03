@@ -172,10 +172,11 @@ body {
 
 .peculiarities-list {
   display: flex;
-  flex-basis: calc(100% / 4 - 90px);
 }
 
 .peculiarities-item {
+  width: 270px;
+  flex-basis: calc(100% / 4 - 30px);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -246,8 +247,7 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-title-color);
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-item {
@@ -259,8 +259,7 @@ body {
 .team-personal-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
-  border: 1px solid;
-  border-top: none;
+  background-color: #fff;
 }
 
 .team-personal-name {
@@ -296,12 +295,15 @@ body {
 
 .footer {
   background-color: #2f303a;
-  height: 252px;
-  padding-top: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-list {
   margin-top: 20px;
   margin-bottom: 60px;
+}
+.footer-item {
+  margin-top: 9px;
 }
 
 .footer-tel-link {
@@ -342,6 +344,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
   cursor: pointer;
+  padding: 22px, 8px;
 }
 .gallery-filters-btn:focus,
 .gallery-filters-btn:hover {
@@ -351,6 +354,7 @@ body {
 /*GALLARY-WORK*/
 .content-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .gallary-work-title {
@@ -375,12 +379,12 @@ body {
 }
 
 .gallery-item {
-  margin-bottom: 34px;
-  margin-left: 8px;
+  margin-bottom: 50px;
+  margin-left: 30px;
 }
 .gallary-card-bottom {
   padding: 20px 24px;
-  border: 1px solid;
+  border: 1px solid #eeeeee;
   border-top: none;
 }
 .gallary-work {
@@ -395,11 +399,14 @@ body {
   margin-top: 30px;
 }
 .gallery-filters-btn {
+  display: block;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   border: none;
+  background: #f5f4fa;
+  padding: 6px 22px;
 }
