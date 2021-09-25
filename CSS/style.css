@@ -28,6 +28,7 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .link {
@@ -300,7 +301,6 @@ body {
 }
 .footer-list {
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 .footer-item {
   margin-top: 9px;
@@ -376,10 +376,10 @@ body {
 .gallery-button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .gallery-item {
-  margin-bottom: 50px;
   margin-left: 30px;
 }
 .gallary-card-bottom {
